@@ -17,10 +17,10 @@ type studentSlice struct {
 }
 
 //var s Student
-var ss studentSlice
+var Ss studentSlice
 
 func JsonToStruct(str string) error  {
-	err := json.Unmarshal([]byte(str), &ss)
+	err := json.Unmarshal([]byte(str), &Ss)
 	return err
 }
 
@@ -34,5 +34,5 @@ func main()  {
 		fmt.Println("json decode fail")
 	}
 
-	fmt.Println(ss);
+	fmt.Println(Ss);
 }
